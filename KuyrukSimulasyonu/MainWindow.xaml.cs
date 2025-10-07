@@ -59,7 +59,7 @@ namespace KuyrukSimulasyonu
             };
 
 
-            // İstersen birkaç örnek kayıt (test için):
+            // Birkaç örnek kayıt (test için):
             SeedSample();
         }
 
@@ -99,7 +99,7 @@ namespace KuyrukSimulasyonu
             DrawCirclesForCurrentFrame();
         }
 
-        // XAML’de tanımladığın Click bu imzayı çağırıyor
+        // XAML’de tanımladığım Click bu imzayı çağırıyor
         private void btnEkle_Click(object sender, RoutedEventArgs e)
         {
             // Basit doğrulama
@@ -128,7 +128,7 @@ namespace KuyrukSimulasyonu
             var when = dpTarih.SelectedDate.Value.Date + ts;
 
 
-            // 5 dakika adımı kontrolü (ödevin tipik şartı)
+            // 5 dakika adımı kontrolü
             if ((when.Minute % 5) != 0)
             {
                 if (MessageBox.Show("Saat, 5 dakikalık aralıklarda olmalı. Yine de ekleyeyim mi?",
