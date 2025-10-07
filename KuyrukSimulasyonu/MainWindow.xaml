@@ -1,0 +1,54 @@
+﻿<Window x:Class="KuyrukSimulasyonu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KuyrukSimulasyonu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="380"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan ="2" Orientation="Horizontal" Margin="8">
+            <Button Name ="btnPlay" Content="Play" />
+            <Button Name="btnPause" Content="Pause"/>
+            <Button Name="btnReset" Content="Reset"/>
+            <TextBlock TextWrapping="Wrap" Background="Azure" Text="Speed"/>
+            <Slider Name="sldSpeed" Minimum="0.5" Maximum="4" Value="1" Width="150"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" Margin="8" Width="293" >
+            <TextBlock TextWrapping="Wrap" Text="Waiting Point (BNxx)"/>
+            <TextBox TextWrapping="Wrap" Name="txtBeklemeNoktasi" Text="" Width="120"/>
+            <TextBlock TextWrapping="Wrap" Text="Date"/>
+            <DatePicker Name="dpTarih"/>
+            <TextBlock TextWrapping="Wrap" Text="Time (HH:mm)"/>
+            <TextBox TextWrapping="Wrap" Name="txtSaat" Text="" Width="120"/>
+            <TextBlock TextWrapping="Wrap" Text="Queue Duration (min)" Height="19" Width="297"/>
+            <TextBox TextWrapping="Wrap" Name="txtKuyrukSuresi" Text="" Width="120"/>
+            <Button Name="btnEkle" Content="add Record" Click="btnEkle_Click"/>
+            <DataGrid Name="dgVeri" Height="220"/>
+
+
+        </StackPanel>
+        <Canvas  Grid.Row="1" Grid.Column="1" Name="simCanvas" Background="#FFF7F7F7" Margin="8"/>
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>

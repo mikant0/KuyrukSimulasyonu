@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36401.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KuyrukSimulasyonu", "KuyrukSimulasyonu\KuyrukSimulasyonu.csproj", "{6C55F961-E5E7-4436-8C7A-E826994403D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C55F961-E5E7-4436-8C7A-E826994403D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C55F961-E5E7-4436-8C7A-E826994403D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C55F961-E5E7-4436-8C7A-E826994403D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C55F961-E5E7-4436-8C7A-E826994403D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD5DE101-27CC-467F-BB75-A85490C961B6}
+	EndGlobalSection
+EndGlobal
